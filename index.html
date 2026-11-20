@@ -1,0 +1,1464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>Watchly — Seu universo cinematográfico</title>
+  <link rel="preconnect" href="https://image.tmdb.org">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-default-route="inicio">
+
+  <!-- =====================================================
+       1. PÁGINA DE APRESENTAÇÃO E LOGIN
+       ===================================================== -->
+
+  <section class="landing" id="landingPage">
+
+    <!-- Cabeçalho da apresentação -->
+    <nav class="landing-nav">
+
+      <a class="landing-brand" href="#" aria-label="Watchly">
+        <img src="logo.png" alt="Watchly" class="brand-mark">
+        Watch<span class="gold">ly</span>
+      </a>
+
+      <span class="landing-nav-note">
+        Seu universo cinematográfico
+      </span>
+
+    </nav>
+
+    <!-- Apresentação principal e formulário de entrada -->
+    <div class="landing-hero">
+
+      <div class="landing-copy">
+
+        <p class="eyebrow">
+          Descubra. Explore. Favorite.
+        </p>
+
+        <h1 class="landing-title">
+          Todo filme tem uma história.
+          <span class="gold">Encontre a sua.</span>
+        </h1>
+
+        <p class="landing-lead">
+          O Watchly é um espaço para quem gosta de cinema. Explore um catálogo de filmes,
+          conheça suas histórias e curiosidades, descubra informações de cada produção
+          e monte sua própria coleção de favoritos.
+        </p>
+
+        <div class="landing-points">
+          <span>Catálogo organizado</span>
+          <span>Detalhes e curiosidades</span>
+          <span>Lista de favoritos</span>
+        </div>
+
+      </div>
+
+      <!--
+        FORMULÁRIO DE LOGIN DEMONSTRATIVO
+
+        Os IDs dos campos são utilizados pelo JavaScript
+        para capturar as informações digitadas pelo usuário.
+
+        A entrada não realiza autenticação real.
+      -->
+      <form class="login-card" id="loginForm">
+
+        <p class="eyebrow">
+          Acesso demonstrativo
+        </p>
+
+        <h2>Entre no Watchly.</h2>
+
+        <p>
+          Preencha os campos abaixo para acessar a experiência.
+          Não é necessário criar uma conta.
+        </p>
+
+        <label class="login-field">
+
+          <span>Seu nome</span>
+
+          <input
+            id="loginName"
+            type="text"
+            placeholder="Como podemos te chamar?"
+            autocomplete="name"
+            required
+          >
+
+        </label>
+
+        <label class="login-field">
+
+          <span>E-mail</span>
+
+          <input
+            id="loginEmail"
+            type="email"
+            placeholder="seuemail@exemplo.com"
+            autocomplete="email"
+            required
+          >
+
+        </label>
+
+        <label class="login-field">
+
+          <span>Senha demonstrativa</span>
+
+          <input
+            id="loginPassword"
+            type="password"
+            placeholder="Digite qualquer senha"
+            required
+          >
+
+        </label>
+
+        <button class="btn btn-gold login-submit" type="submit">
+          Entrar no Watchly <span>→</span>
+        </button>
+
+        <p class="demo-note">
+          Este login é apenas uma demonstração visual.
+          Nenhum dado é enviado ou armazenado em um banco de dados.
+        </p>
+
+      </form>
+
+    </div>
+
+    <!-- Apresentação das principais funcionalidades -->
+    <section class="landing-section">
+
+      <div class="landing-section-heading">
+
+        <p class="eyebrow">
+          O que você encontra por aqui
+        </p>
+
+        <h2>
+          Uma experiência feita para
+          <span class="gold">explorar.</span>
+        </h2>
+
+        <p>
+          Conheça as principais funcionalidades antes de entrar no catálogo.
+        </p>
+
+      </div>
+
+      <div class="feature-grid">
+
+        <article class="feature-card">
+
+          <span class="feature-icon">⌕</span>
+
+          <h3>Explore o catálogo</h3>
+
+          <p>
+            Pesquise filmes por título, gênero ou diretor e organize os resultados
+            para encontrar sua próxima história.
+          </p>
+
+        </article>
+
+        <article class="feature-card">
+
+          <span class="feature-icon">◈</span>
+
+          <h3>Conheça cada filme</h3>
+
+          <p>
+            Veja sinopse, elenco, direção, duração, data de lançamento,
+            avaliação, prêmios e curiosidades.
+          </p>
+
+        </article>
+
+        <article class="feature-card">
+
+          <span class="feature-icon">♡</span>
+
+          <h3>Monte sua coleção</h3>
+
+          <p>
+            Adicione filmes aos favoritos e reúna em um só lugar
+            as produções que chamaram sua atenção.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- =====================================================
+         ÁREA DE VÍDEO DE APRESENTAÇÃO
+         ===================================================== -->
+
+    <section class="landing-section" id="demonstracao">
+
+      <div class="landing-section-heading">
+
+        <p class="eyebrow">
+          Veja o Watchly em ação
+        </p>
+
+        <h2>
+          Uma prévia da
+          <span class="gold">experiência.</span>
+        </h2>
+
+        <p>
+          Este espaço é reservado para um vídeo de demonstração do site.
+        </p>
+
+      </div>
+
+      <div class="demo-video-wrap">
+
+        <video class="demo-video" id="demoVideo" controls playsinline>
+
+          <source src="videodosite.mp4" type="video/mp4">
+
+          Seu navegador não conseguiu carregar o vídeo.
+
+        </video>
+
+        <div class="video-help">
+
+          <h3>Apresentação do Site.</h3>
+
+          <p>
+            Assista ao vídeo de apresentação do projeto e conheça
+            um pouco do layout do site e suas principais funcionalidades.
+          </p>
+
+          <!--
+            Campo reservado para selecionar um vídeo do computador.
+            Está oculto pelo estilo original da página.
+          -->
+          <label class="video-upload" style="display: none;">
+
+            Escolher vídeo
+
+            <input
+              type="file"
+              id="videoFile"
+              accept="video/*"
+            >
+
+          </label>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Rodapé da apresentação -->
+    <div class="landing-footer">
+      © 2026 Watchly · Projeto demonstrativo
+    </div>
+
+  </section>
+
+
+  <!-- =====================================================
+       2. APLICAÇÃO PRINCIPAL
+       ===================================================== -->
+
+  <div id="appShell" class="app-shell hidden">
+
+    <!-- ===================================================
+         CABEÇALHO E NAVEGAÇÃO PRINCIPAL
+         =================================================== -->
+
+    <header class="header">
+
+      <a
+        class="logo"
+        onclick="irPara('inicio')"
+        aria-label="Watchly início"
+      >
+        <img src="logo.png" alt="Watchly" class="brand-mark">
+        Watch<span class="gold">ly</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+
+        <button
+          data-page="inicio"
+          class="active"
+          onclick="irPara('inicio')"
+        >
+          Início
+        </button>
+
+        <button
+          data-page="catalogo"
+          onclick="irPara('catalogo')"
+        >
+          Filmes
+        </button>
+
+        <button
+          data-page="favoritos"
+          onclick="irPara('favoritos')"
+        >
+          Favoritos <span id="favCount"></span>
+        </button>
+
+        <button
+          data-page="minha-lista"
+          onclick="irPara('minha-lista')"
+        >
+          Minha lista
+        </button>
+
+        <button
+          data-page="estatisticas"
+          onclick="irPara('estatisticas')"
+        >
+          Estatísticas
+        </button>
+
+        <button
+          data-page="sobre"
+          onclick="irPara('sobre')"
+        >
+          Sobre
+        </button>
+
+      </nav>
+
+      <!-- Área de pesquisa e acesso rápido aos favoritos -->
+      <div class="header-right">
+
+        <label class="search">
+
+          <span>⌕</span>
+
+          <input
+            id="buscaGlobal"
+            type="search"
+            placeholder="Buscar filmes..."
+            aria-label="Buscar filmes"
+          >
+
+        </label>
+
+        <button
+          class="circle-btn"
+          onclick="irPara('favoritos')"
+          aria-label="Abrir favoritos"
+        >
+          ♡
+        </button>
+
+      </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         3. CONTEÚDO PRINCIPAL
+         ===================================================== -->
+
+    <main>
+
+      <!-- ===================================================
+           PÁGINA INICIAL
+           =================================================== -->
+
+      <section class="page active" id="page-inicio">
+
+        <!-- Banner principal -->
+        <div class="hero">
+
+          <div class="hero-content">
+
+            <p class="eyebrow">
+              ✦ A experiência Watchly
+            </p>
+
+            <h1>
+              Duna:<br>
+              Parte Dois
+            </h1>
+
+            <p class="hero-tagline">
+              O destino de um povo. O começo de uma lenda.
+            </p>
+
+            <div class="meta">
+
+              <span>2024</span>
+              <span class="dot">•</span>
+
+              <span>Ficção científica</span>
+              <span class="dot">•</span>
+
+              <span>Aventura</span>
+
+            </div>
+
+            <p class="hero-description">
+              Em uma jornada épica por Arrakis, Paul Atreides une forças com Chani
+              e os Fremen para enfrentar seu destino e lutar pelo futuro de seu povo.
+            </p>
+
+            <div class="actions">
+
+              <button
+                class="btn btn-gold"
+                onclick="abrirFilme(1)"
+              >
+                ＋ Explorar filme
+              </button>
+
+              <button
+                class="btn btn-outline"
+                onclick="alternarFavorito(1)"
+                id="heroFav"
+              >
+                ♡ Minha lista
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- CARROSSEL: FILMES EM ALTA -->
+
+        <div class="shelf">
+
+          <div class="shelf-heading">
+
+            <div>
+
+              <h2 class="shelf-title">
+                Em <span class="gold">alta.</span>
+              </h2>
+
+              <p class="shelf-subtitle">
+                Histórias que merecem a tela grande.
+              </p>
+
+            </div>
+
+            <div class="shelf-controls">
+
+              <button
+                class="circle-btn"
+                onclick="mover('trending',-1)"
+                aria-label="Anteriores"
+              >
+                ‹
+              </button>
+
+              <button
+                class="circle-btn"
+                onclick="mover('trending',1)"
+                aria-label="Próximos"
+              >
+                ›
+              </button>
+
+            </div>
+
+          </div>
+
+          <!--
+            Os cartões desta seção são gerados dinamicamente pelo JavaScript.
+            O ID trending permite que o JavaScript encontre esta área e insira os filmes.
+          -->
+          <div class="movie-track" id="trending"></div>
+
+        </div>
+
+
+        <!-- CARROSSEL: CLÁSSICOS -->
+
+        <div class="shelf">
+
+          <div class="shelf-heading">
+
+            <div>
+
+              <h2 class="shelf-title">
+                Clássicos <span class="gold">eternos.</span>
+              </h2>
+
+              <p class="shelf-subtitle">
+                Obras que atravessam gerações.
+              </p>
+
+            </div>
+
+            <div class="shelf-controls">
+
+              <button
+                class="circle-btn"
+                onclick="mover('classics',-1)"
+                aria-label="Anteriores"
+              >
+                ‹
+              </button>
+
+              <button
+                class="circle-btn"
+                onclick="mover('classics',1)"
+                aria-label="Próximos"
+              >
+                ›
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="movie-track" id="classics"></div>
+
+        </div>
+
+
+        <!-- CARROSSEL: FILMES EMOCIONANTES -->
+
+        <div class="shelf">
+
+          <div class="shelf-heading">
+
+            <div>
+
+              <h2 class="shelf-title">
+                Para sentir <span class="gold">tudo.</span>
+              </h2>
+
+              <p class="shelf-subtitle">
+                Filmes que ficam com você depois dos créditos.
+              </p>
+
+            </div>
+
+            <div class="shelf-controls">
+
+              <button
+                class="circle-btn"
+                onclick="mover('emotional',-1)"
+                aria-label="Anteriores"
+              >
+                ‹
+              </button>
+
+              <button
+                class="circle-btn"
+                onclick="mover('emotional',1)"
+                aria-label="Próximos"
+              >
+                ›
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="movie-track" id="emotional"></div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           PÁGINA DE CATÁLOGO
+           =================================================== -->
+
+      <section class="page" id="page-catalogo">
+
+        <div class="container">
+
+          <div class="page-heading">
+
+            <p class="eyebrow">
+              O acervo Watchly
+            </p>
+
+            <h1 class="page-title">
+              Encontre sua próxima <span class="gold">obsessão.</span>
+            </h1>
+
+            <p class="page-description">
+              Explore grandes histórias, descubra novos mundos
+              e conheça os bastidores de cada obra.
+            </p>
+
+          </div>
+
+          <!-- Campos de pesquisa, filtragem e ordenação -->
+          <div class="catalog-tools">
+
+            <input
+              id="buscaCatalogo"
+              type="search"
+              placeholder="Pesquisar título, gênero ou diretor..."
+            >
+
+            <select id="filtroGenero" aria-label="Filtrar por gênero">
+
+              <option value="">Todos os gêneros</option>
+              <option>Drama</option>
+              <option>Ficção científica</option>
+              <option>Aventura</option>
+              <option>Crime</option>
+              <option>Suspense</option>
+              <option>Animação</option>
+              <option>Musical</option>
+              <option>Fantasia</option>
+
+            </select>
+
+            <select id="ordenarCatalogo" aria-label="Ordenar filmes">
+
+              <option value="popular">Ordem original</option>
+              <option value="nota">Melhor nota</option>
+              <option value="ano">Mais recentes</option>
+              <option value="titulo">Ordem alfabética</option>
+
+            </select>
+
+          </div>
+
+          <!-- Os filmes são inseridos pelo JavaScript -->
+          <div class="catalog-grid" id="catalogoGrid"></div>
+
+          <p class="empty hidden" id="catalogoVazio">
+            Nenhum filme encontrado com esses filtros.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           PÁGINA DE FAVORITOS
+           =================================================== -->
+
+      <section class="page" id="page-favoritos">
+
+        <div class="container">
+
+          <div class="page-heading">
+
+            <p class="eyebrow">
+              Sua coleção particular
+            </p>
+
+            <h1 class="page-title">
+              Filmes que são <span class="gold">seus.</span>
+            </h1>
+
+            <p class="page-description">
+              Sua seleção pessoal de histórias para rever, recomendar e guardar.
+            </p>
+
+          </div>
+
+          <!-- Lista de favoritos carregada pelo JavaScript -->
+          <div class="catalog-grid" id="favoritosGrid"></div>
+
+          <!-- Mensagem exibida quando não existem favoritos -->
+          <div class="empty hidden" id="favoritosVazio">
+
+            <strong>
+              Ainda não há filmes na sua coleção.
+            </strong>
+
+            Explore o catálogo e toque no coração de um filme
+            para adicioná-lo aqui.
+
+            <br><br>
+
+            <button
+              class="btn btn-gold"
+              onclick="irPara('catalogo')"
+            >
+              Explorar filmes ↗
+            </button>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           4. MINHA LISTA
+           =================================================== -->
+
+      <section class="page" id="page-minha-lista">
+
+        <div class="container">
+
+          <div class="page-heading">
+
+            <p class="eyebrow">
+              Sua jornada cinematográfica
+            </p>
+
+            <h1 class="page-title">
+              Minha <span class="gold">lista.</span>
+            </h1>
+
+            <p class="page-description">
+              Organize o que deseja assistir, o que está em andamento e
+              os filmes que já fizeram parte da sua sessão.
+            </p>
+
+          </div>
+
+          <!-- Filtros pessoais -->
+          <div class="list-toolbar">
+
+            <select id="listaGenero">
+              <option value="">Todos os gêneros</option>
+            </select>
+
+            <select id="listaAno">
+              <option value="">Todos os anos</option>
+            </select>
+
+            <select id="listaNota">
+
+              <option value="">Qualquer nota oficial</option>
+              <option value="8">8 ou mais</option>
+              <option value="7">7 ou mais</option>
+              <option value="6">6 ou mais</option>
+
+            </select>
+
+            <select id="listaSituacao">
+
+              <option value="">Todas as situações</option>
+              <option value="quero">Quero assistir</option>
+              <option value="assistindo">Assistindo</option>
+              <option value="assistido">Já assisti</option>
+
+            </select>
+
+          </div>
+
+          <!--
+            ORGANIZAÇÃO DAS LISTAS
+
+            Os filmes são separados pelo JavaScript em três categorias:
+            quero assistir, assistindo e já assisti.
+
+            Os IDs permitem identificar onde cada grupo deve aparecer.
+          -->
+          <div class="list-columns">
+
+            <section class="list-column">
+
+              <h2>
+                Quero assistir
+                <span id="count-quero">0</span>
+              </h2>
+
+              <div id="lista-quero" class="catalog-grid"></div>
+
+            </section>
+
+            <section class="list-column">
+
+              <h2>
+                Assistindo
+                <span id="count-assistindo">0</span>
+              </h2>
+
+              <div id="lista-assistindo" class="catalog-grid"></div>
+
+            </section>
+
+            <section class="list-column">
+
+              <h2>
+                Já assisti
+                <span id="count-assistido">0</span>
+              </h2>
+
+              <div id="lista-assistido" class="catalog-grid"></div>
+
+            </section>
+
+          </div>
+
+          <p id="listaVazia" class="empty">
+            Sua lista ainda está vazia.
+            Adicione filmes pelo catálogo ou pelos detalhes.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           5. ESTATÍSTICAS
+           =================================================== -->
+
+      <section class="page" id="page-estatisticas">
+
+        <div class="container">
+
+          <div class="page-heading">
+
+            <p class="eyebrow">
+              Seu histórico em números
+            </p>
+
+            <h1 class="page-title">
+              Estatísticas <span class="gold">pessoais.</span>
+            </h1>
+
+            <p class="page-description">
+              Todos os dados são calculados a partir da sua atividade
+              salva neste navegador.
+            </p>
+
+          </div>
+
+          <!-- Indicadores gerais -->
+          <div class="stats-grid">
+
+            <article class="stat-card">
+
+              <span>Filmes assistidos</span>
+              <strong id="stat-assistidos">0</strong>
+
+            </article>
+
+            <article class="stat-card">
+
+              <span>Quero assistir</span>
+              <strong id="stat-quero">0</strong>
+
+            </article>
+
+            <article class="stat-card">
+
+              <span>Em andamento</span>
+              <strong id="stat-assistindo">0</strong>
+
+            </article>
+
+            <article class="stat-card">
+
+              <span>Média pessoal</span>
+              <strong id="stat-media">—</strong>
+
+            </article>
+
+            <article class="stat-card">
+
+              <span>Tempo assistido</span>
+              <strong id="stat-tempo">0h</strong>
+
+            </article>
+
+            <article class="stat-card">
+
+              <span>Avaliações</span>
+              <strong id="stat-avaliacoes">0</strong>
+
+            </article>
+
+          </div>
+
+          <!-- Gráficos e destaques pessoais -->
+          <div class="stats-panels">
+
+            <article class="extra-block">
+
+              <h3>Gêneros mais assistidos</h3>
+
+              <!-- Área preenchida dinamicamente pelo JavaScript -->
+              <div id="generosChart" class="bar-chart">
+
+                <p class="muted">
+                  Ainda não há dados suficientes.
+                </p>
+
+              </div>
+
+            </article>
+
+            <article class="extra-block">
+
+              <h3>Destaques pessoais</h3>
+
+              <div id="statsDestaques" class="stats-highlights">
+
+                <p class="muted">
+                  Avalie filmes para descobrir seus destaques.
+                </p>
+
+              </div>
+
+            </article>
+
+          </div>
+
+
+          <!-- Ranking pessoal dos filmes -->
+          <section class="ranking-section">
+
+            <div class="shelf-heading">
+
+              <div>
+
+                <p class="eyebrow">
+                  Sua curadoria
+                </p>
+
+                <h2 class="shelf-title">
+                  TOP 10 <span class="gold">favoritos.</span>
+                </h2>
+
+              </div>
+
+            </div>
+
+            <div id="rankingGrid" class="ranking-grid">
+
+              <p class="muted">
+                Suas avaliações aparecerão aqui.
+              </p>
+
+            </div>
+
+          </section>
+
+
+          <!-- Sorteio de filmes -->
+          <section class="random-section extra-block">
+
+            <p class="eyebrow">
+              Sem ideia para hoje?
+            </p>
+
+            <h2>
+              O que assistir <span class="gold">hoje?</span>
+            </h2>
+
+            <div id="randomMovie" class="random-movie">
+
+              <p>
+                Adicione filmes à categoria “Quero assistir”
+                para sortear um título.
+              </p>
+
+            </div>
+
+            <button
+              class="btn btn-gold"
+              onclick="sortearFilme()"
+            >
+              Sortear outro filme ↻
+            </button>
+
+          </section>
+
+
+          <!-- Calendário de sessões -->
+          <section class="calendar-section">
+
+            <div class="shelf-heading">
+
+              <div>
+
+                <p class="eyebrow">
+                  Planeje sua próxima sessão
+                </p>
+
+                <h2 class="shelf-title">
+                  Calendário <span class="gold">cinematográfico.</span>
+                </h2>
+
+              </div>
+
+            </div>
+
+            <form id="scheduleForm" class="schedule-form">
+
+              <select id="scheduleMovie" required>
+
+                <option value="">
+                  Selecione um filme da sua lista
+                </option>
+
+              </select>
+
+              <input
+                id="scheduleDate"
+                type="date"
+                required
+              >
+
+              <input
+                id="scheduleTime"
+                type="time"
+              >
+
+              <button class="btn btn-gold" type="submit">
+                Programar sessão
+              </button>
+
+            </form>
+
+            <div id="scheduleList" class="schedule-list">
+
+              <p class="muted">
+                Nenhuma sessão programada.
+              </p>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           6. PÁGINA SOBRE
+           =================================================== -->
+
+      <section class="page" id="page-sobre">
+
+        <div class="about-banner">
+
+          <p class="eyebrow">
+            Nossa filosofia
+          </p>
+
+          <h1>
+            O cinema é uma janela para
+            <span class="gold">outros mundos.</span>
+          </h1>
+
+          <p>
+            O Watchly nasceu para celebrar a arte de contar histórias.
+            Dos clássicos que moldaram gerações às novas obras que desafiam
+            a imaginação, cada filme merece ser descoberto com atenção.
+          </p>
+
+        </div>
+
+        <div class="about-cards">
+
+          <article class="about-card">
+
+            <span>✦</span>
+
+            <h3>Curadoria</h3>
+
+            <p>
+              Uma seleção que reúne diferentes épocas, estilos,
+              diretores e formas de enxergar o mundo.
+            </p>
+
+          </article>
+
+          <article class="about-card">
+
+            <span>♡</span>
+
+            <h3>Sua coleção</h3>
+
+            <p>
+              Guarde seus filmes preferidos e construa uma lista
+              que reflita seu próprio gosto cinematográfico.
+            </p>
+
+          </article>
+
+          <article class="about-card">
+
+            <span>◈</span>
+
+            <h3>Descoberta</h3>
+
+            <p>
+              Conheça informações, curiosidades, prêmios
+              e detalhes por trás de cada produção.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- ===================================================
+           7. PÁGINA DE DETALHES DO FILME
+           =================================================== -->
+
+      <section class="page" id="page-detalhes">
+
+        <!--
+          ÁREA DINÂMICA DE DETALHES
+
+          Os elementos desta seção são preenchidos pelo JavaScript
+          conforme o usuário seleciona um filme no catálogo.
+
+          Os IDs são essenciais para que o JavaScript encontre
+          os locais corretos para inserir as informações.
+        -->
+        <div class="detail-hero" id="detailHero">
+
+          <div class="detail-layout">
+
+            <div>
+
+              <img
+                class="detail-poster"
+                id="detailPoster"
+                src=""
+                alt=""
+              >
+
+            </div>
+
+            <div>
+
+              <button
+                class="back-btn"
+                onclick="voltarPagina()"
+              >
+                ← Voltar
+              </button>
+
+              <p class="eyebrow">
+                Explore a obra
+              </p>
+
+              <h1 class="detail-title" id="detailTitle"></h1>
+
+              <p class="detail-tagline" id="detailTagline"></p>
+
+              <div class="meta" id="detailMeta"></div>
+
+              <div class="detail-facts" id="detailFacts"></div>
+
+              <p class="detail-description" id="detailDescription"></p>
+
+              <div class="actions">
+
+                <button
+                  class="btn btn-gold"
+                  id="detailTrailer"
+                >
+                  ▶ Encontrar trailer
+                </button>
+
+                <button
+                  class="btn btn-outline"
+                  id="detailFavorite"
+                >
+                  ♡ Adicionar aos favoritos
+                </button>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Informações adicionais do filme -->
+        <div class="detail-extra">
+
+          <article class="extra-block">
+
+            <h3>Ficha técnica</h3>
+
+            <p id="detailCredits"></p>
+
+          </article>
+
+          <article class="extra-block">
+
+            <h3>Prêmios e reconhecimento</h3>
+
+            <p id="detailAwards"></p>
+
+          </article>
+
+          <article class="extra-block">
+
+            <h3>Sobre o filme</h3>
+
+            <p id="detailGenres"></p>
+
+          </article>
+
+          <article class="extra-block">
+
+            <h3>Uma curiosidade</h3>
+
+            <p id="detailTrivia"></p>
+
+          </article>
+
+        </div>
+
+
+        <!-- =================================================
+             FORMULÁRIO DE AVALIAÇÃO PESSOAL
+             ================================================= -->
+
+        <article class="extra-block personal-review">
+
+          <h3>Minha avaliação</h3>
+
+          <p class="muted">
+            Sua nota é privada e independente da nota oficial do Watchly.
+          </p>
+
+          <form id="reviewForm" class="review-form">
+
+            <label>
+
+              Minha nota (0 a 10)
+
+              <input
+                id="reviewRating"
+                type="number"
+                min="0"
+                max="10"
+                step="0.1"
+                placeholder="Ex.: 8,5"
+                required
+              >
+
+            </label>
+
+            <label>
+
+              Minha crítica
+
+              <textarea
+                id="reviewText"
+                rows="4"
+                maxlength="1200"
+                placeholder="O que você achou do filme?"
+              ></textarea>
+
+            </label>
+
+            <div class="review-actions">
+
+              <button class="btn btn-gold" type="submit">
+                Salvar avaliação
+              </button>
+
+              <button
+                class="btn btn-outline"
+                id="deleteReview"
+                type="button"
+              >
+                Excluir avaliação
+              </button>
+
+            </div>
+
+          </form>
+
+          <p id="savedReview" class="saved-review"></p>
+
+          <!-- Controle da situação do filme na lista pessoal -->
+          <div class="status-actions">
+
+            <label>
+
+              Situação na minha lista
+
+              <select id="detailStatus">
+
+                <option value="">Não está na lista</option>
+                <option value="quero">Quero assistir</option>
+                <option value="assistindo">Assistindo</option>
+                <option value="assistido">Já assisti</option>
+
+              </select>
+
+            </label>
+
+            <button
+              class="btn btn-outline"
+              id="removeFromList"
+              type="button"
+            >
+              Remover da lista
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- CARROSSEL DE FILMES RELACIONADOS -->
+        <div class="shelf">
+
+          <div class="shelf-heading">
+
+            <div>
+
+              <h2 class="shelf-title">
+                Você também pode <span class="gold">gostar.</span>
+              </h2>
+
+              <p class="shelf-subtitle">
+                Mais histórias para colocar na sua lista.
+              </p>
+
+            </div>
+
+            <div class="shelf-controls">
+
+              <button
+                class="circle-btn"
+                onclick="mover('related',-1)"
+                aria-label="Anteriores"
+              >
+                ‹
+              </button>
+
+              <button
+                class="circle-btn"
+                onclick="mover('related',1)"
+                aria-label="Próximos"
+              >
+                ›
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="movie-track" id="related"></div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         8. RODAPÉ DA APLICAÇÃO
+         ===================================================== -->
+
+    <footer>
+
+      <div>
+
+        <div class="footer-logo">
+
+          <img
+            src="logo.png"
+            alt="Watchly"
+            class="brand-mark"
+          >
+
+          Watch<span class="gold">ly</span>
+
+        </div>
+
+        <p style="margin-top:5px">
+          Mais que filmes. São experiências.
+        </p>
+
+      </div>
+
+      <div class="footer-links">
+
+        <button onclick="irPara('inicio')">
+          Início
+        </button>
+
+        <button onclick="irPara('catalogo')">
+          Filmes
+        </button>
+
+        <button onclick="irPara('favoritos')">
+          Favoritos
+        </button>
+
+        <button onclick="irPara('minha-lista')">
+          Minha lista
+        </button>
+
+        <button onclick="irPara('estatisticas')">
+          Estatísticas
+        </button>
+
+        <button onclick="irPara('sobre')">
+          Sobre
+        </button>
+
+      </div>
+
+      <p>
+        © 2026 Watchly · Projeto demonstrativo
+      </p>
+
+    </footer>
+
+  </div>
+
+
+  <!-- =====================================================
+       9. AVISOS DO SISTEMA
+       ===================================================== -->
+
+  <!--
+    Área de notificações criada para receber mensagens do JavaScript.
+    aria-live permite que leitores de tela identifiquem as atualizações.
+  -->
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  ></div>
+
+
+  <!-- =====================================================
+       10. CARREGAMENTO DO JAVASCRIPT
+       ===================================================== -->
+
+  <!-- Arquivo responsável pelas funcionalidades do Watchly -->
+  <script src="app.js"></script>
+
+</body>
+</html>
